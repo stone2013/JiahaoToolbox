@@ -1,0 +1,17 @@
+{
+  "version": "4.1.0",
+  "date": "2026-10-17",
+  "platform": "win32",
+  "osRelease": "10.0.26200",
+  "exeSHA256": "56b22ac372a557f11263dd18df5ed627628330d74c8ac87cb323701952ace5dc",
+  "goTests": 47,
+  "frontendTests": 42,
+  "browserLayouts": 3,
+  "nativeSmoke": "UI-ready log and responding process only",
+  "externalToolWindows": "not verified",
+  "selfCheck": {
+    "samples": 8,
+    "hardwareStatus": "ok",
+    "errors": []
+  }
+}

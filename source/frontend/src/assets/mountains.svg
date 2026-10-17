@@ -1,0 +1,41 @@
+<!-- Original vector artwork for Jiahao Toolbox, 2026. CC0-1.0. No external assets. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 420" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x2=".9" y2="1"><stop stop-color="#102b4e"/><stop offset=".5" stop-color="#42617e"/><stop offset=".78" stop-color="#b39fa4"/><stop offset="1" stop-color="#f4b29b"/></linearGradient>
+ <linearGradient id="rock" x2=".8" y2="1"><stop stop-color="#1b4269"/><stop offset=".7" stop-color="#24435c"/><stop offset="1" stop-color="#101e35"/></linearGradient>
+ <linearGradient id="light" x1="0" x2="1"><stop stop-color="#66859e"/><stop offset="1" stop-color="#ceac9c"/></linearGradient>
+ <linearGradient id="lake" x2="0" y2="1"><stop stop-color="#526c86"/><stop offset=".35" stop-color="#1e4767"/><stop offset="1" stop-color="#102b47"/></linearGradient>
+ <linearGradient id="fade" x2="0" y2="1"><stop stop-color="white" stop-opacity=".42"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+ <mask id="reflection"><rect x="0" y="422" width="2400" height="240" fill="url(#fade)"/></mask>
+ <g id="mountain">
+ <path d="M0 408 112 324 204 347 341 254 446 301 528 227 617 285 703 246 812 306 938 207 1023 276 1141 196 1249 271 1372 174 1486 239 1610 169 1741 268 1829 228 1961 301 2042 253 2198 316 2290 253 2400 314v132H0Z" fill="#3f5975"/>
+ <path d="m591 415 121-135 42 24 120-135 37 34 35-50 76 68 63-56 55 36 40-23 52-91 37 10 57-58 25 11 35-31 55 17 29-44 38 27 24-24 50 64 43-25 31 74 20-2 63 92 52-63 65 71 58-41 82 88 61-16 70 51 179 84 50 49Z" fill="url(#rock)"/>
+ <path d="m911 203 35-50 76 68-10 29-45-39-12 30-19-54Z" fill="#9eb6c8" opacity=".8"/>
+ <path d="m1205 170 27-83 37 10 57-58 25 11 35-31 55 17 29-44 38 27 24-24 50 64 43-25 31 74 20-2 63 92-53-35-26-43-32 6-27-69-15 21-13-20-27 7-19-48-13 35-24-15-25 41-20-30-22 29-35 13-20 59-25-7Z" fill="#b0c5d4" opacity=".88"/>
+ <path d="m1386 19 28 121 58 70 7 62-69-55-24-73-13-41-31-19Z" fill="#172e49"/>
+ <path d="m1439 35 33 108 43 45 20 82 89 83-51-119-36-43-11-72-26-19-30-91Z" fill="url(#light)" opacity=".83"/>
+ <path d="m1482 59 43-25 31 74 20-2 63 92 46 113-35-36-55-54-45-63-41-71Z" fill="#d2a58e" opacity=".65"/>
+ <path d="m1326 39 11 104-21 7-17 100-25 65-56 53 39-140 19-41 12-96Z" fill="#7697b2" opacity=".57"/>
+ <path d="m1232 87 2 96-42 79-60 47 31-74 23-23 2-39Z" fill="#668aa7" opacity=".48"/>
+ <path d="m1100 201 40-23-12 103-39 43-3-31 24-61Z" fill="#92a8bd" opacity=".54"/>
+ <path d="m1591 250 48-52 46 113 24 23 45 55-76-40-22-54-22 17-14-46Z" fill="#8c94a0" opacity=".74"/>
+ <path d="m1684 229 65 71 58-41 82 88 61-16 70 51-89-37-9 17-43-9-70-66-29 47-25-32-40-6Z" fill="#8b9ab0" opacity=".68"/>
+ <path d="m1319 180 20 31 18 103 38 58-56-55-17-83-22 26 12-41Zm98 41 20 54 37 25 3 46-22-36-39-6-27-102Zm79-50 12 76 27 33 24 44-51-50-17-34-5-40Z" fill="#a8bfd1" opacity=".45"/>
+ <g stroke="#a8bed3" fill="none" opacity=".22" stroke-width="2"><path d="m1240 160-50 143-30 32m159-174-26 118-39 69m101-208 27 105 26 44m-207-62-27 79-51 45m-53-98-57 87m555-106 39 79 83 74m-236-211 29 97 71 111m-28-168 49 88 37 33m-338-151-60 206m-126-61-38 61m367-50 65 113m-114-213 51 74"/></g>
+ <path d="M0 424v-59l117-53 49 17 139-47 59 51 115-14 90 67 115-24 97 56 95-28 148 27 156-52 107 59 92-7 94 17 150-16 128-55 122 39 146-11 155-53 106-67 68 29 97-47v180Z" fill="#142c3f"/>
+ <path d="m1387 427 50-19 77 5 40-9 140 22 62-4 129 17H1184Z" fill="#959887" opacity=".66"/>
+ </g>
+ <g id="pine" fill="#0b2436"><path d="m0 0-10 29h6l-11 19h10l-13 21h36L5 48h10L4 29h6Z"/><path d="M-2 59h4v28h-4z"/></g>
+</defs>
+<g transform="scale(1 .6774193548)">
+<rect width="2400" height="620" fill="url(#sky)"/>
+<g fill="#edd0c0" opacity=".21"><path d="m1540 58 283-14 101 12-80 8-262 8Z"/><path d="m1816 126 229-36 155 8-96 13-142 5Z"/><path d="m1694 98 141-8 104 2-182 14Z"/><path d="m2082 178 132-25 171 4-82 12Z"/><path d="m1030 39 199-18 111 10-140 5Z"/></g>
+<use href="#mountain"/>
+<rect y="431" width="2400" height="189" fill="url(#lake)"/>
+<g mask="url(#reflection)"><use href="#mountain" transform="translate(0 867) scale(1 -1)"/></g>
+<g fill="none" stroke="#a5b2bc" stroke-width="1" opacity=".2"><path d="M674 440h1632M813 449h1390M521 462h1324M914 478h1255M306 498h895M1150 514h1104M623 540h1314M739 562h1303M90 587h1414M1603 451h612M318 479h423M1058 590h1057"/></g>
+<g opacity=".95"><use href="#pine" transform="translate(1268 355) scale(.76)"/><use href="#pine" transform="translate(1299 337) scale(1)"/><use href="#pine" transform="translate(1325 364) scale(.7)"/><use href="#pine" transform="translate(1349 321) scale(1.26)"/><use href="#pine" transform="translate(1393 349) scale(.95)"/><use href="#pine" transform="translate(1421 365) scale(.69)"/><use href="#pine" transform="translate(1458 356) scale(.9)"/><use href="#pine" transform="translate(1490 380) scale(.58)"/><use href="#pine" transform="translate(1518 365) scale(.8)"/><use href="#pine" transform="translate(1544 370) scale(.75)"/><use href="#pine" transform="translate(1565 386) scale(.6)"/><use href="#pine" transform="translate(1589 362) scale(.9)"/></g>
+<path d="M0 427 172 438 258 478 396 479 556 507 624 516 848 520 731 543 350 561 0 560Z" fill="#0b1f30"/>
+<g fill="#203a48" opacity=".72"><path d="M109 436h144l74 15H132Zm271 51h123l76 18H421Zm-82 47h234l87 7H292Z"/></g>
+</g>
+</svg>

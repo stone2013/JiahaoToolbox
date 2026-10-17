@@ -1,0 +1,1119 @@
+{
+  "version": "4.0.0-beta.1",
+  "classification": "local evaluation Beta; release blocked",
+  "buildTimeUTC": "2026-10-17T04:37:12Z",
+  "host": {
+    "os": "Linux x64",
+    "kernel": "6.18.55",
+    "go": "go1.23.2",
+    "node": "22.16.0",
+    "typescript": "5.8.3"
+  },
+  "executable": {
+    "file": "JiahaoToolbox_v4.0.exe",
+    "architecture": "AMD64",
+    "format": "PE32+",
+    "subsystem": "Windows GUI",
+    "size": 6482944,
+    "sha256": "00932dbb67300ca4d95b9bb5122ad54b999203f1066b2c2867eef87f0e65a1f9"
+  },
+  "tests": {
+    "goTests": 43,
+    "goFailed": 0,
+    "goRace": "PASS on Linux",
+    "goVetLinux": "PASS",
+    "goVetWindowsTarget": "PASS static analysis only",
+    "linuxStatementCoverage": "64.3%",
+    "frontendUnitTests": 12,
+    "frontendUnitFailures": 0,
+    "uiMatrixRows": 38,
+    "uiInteractions": 26,
+    "uiJSErrors": 0,
+    "uiPassed": true,
+    "nativeWindowsExecuted": false,
+    "windowsTestBinariesCrossCompiled": 6,
+    "windowsABITestsExecuted": false,
+    "fullGUIHourTestExecuted": false,
+    "vulnerabilityDatabaseScanExecuted": false,
+    "deliveredSourceExactRebuild": "PASS: same toolchain and flags, byte-identical EXE"
+  },
+  "rendererRouteLatencyMilliseconds": [
+    {
+      "route": "cpu",
+      "milliseconds": 56.3
+    },
+    {
+      "route": "gpu",
+      "milliseconds": 12.6
+    },
+    {
+      "route": "memory",
+      "milliseconds": 13.5
+    },
+    {
+      "route": "disk",
+      "milliseconds": 36.5
+    },
+    {
+      "route": "network",
+      "milliseconds": 21.3
+    },
+    {
+      "route": "hardware",
+      "milliseconds": 14.5
+    },
+    {
+      "route": "tools",
+      "milliseconds": 12.2
+    },
+    {
+      "route": "diagnostics",
+      "milliseconds": 10.2
+    },
+    {
+      "route": "settings",
+      "milliseconds": 20.5
+    },
+    {
+      "route": "about",
+      "milliseconds": 18.4
+    },
+    {
+      "route": "overview",
+      "milliseconds": 16.5
+    }
+  ],
+  "backendOnlyLinux30s": {
+    "elapsedSeconds": 30.001017326,
+    "samples": 30,
+    "lastSampleDurationMS": 0.458,
+    "goHeapStart": 402624,
+    "goHeapEnd": 1895832,
+    "goGoroutinesStart": 6,
+    "goGoroutinesEnd": 5,
+    "hardwareStatus": "partial"
+  },
+  "uiMatrix": [
+    {
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 1,
+      "css": {
+        "width": 1366,
+        "height": 768
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1366,
+          768
+        ],
+        "mainWidth": 1120,
+        "mainScrollWidth": 1120
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 1.25,
+      "css": {
+        "width": 1092,
+        "height": 614
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1092,
+          614
+        ],
+        "mainWidth": 879,
+        "mainScrollWidth": 879
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 1.5,
+      "css": {
+        "width": 910,
+        "height": 512
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          910,
+          512
+        ],
+        "mainWidth": 826,
+        "mainScrollWidth": 826
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 1.75,
+      "css": {
+        "width": 780,
+        "height": 438
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          780,
+          438
+        ],
+        "mainWidth": 696,
+        "mainScrollWidth": 696
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 2,
+      "css": {
+        "width": 683,
+        "height": 384
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          683,
+          384
+        ],
+        "mainWidth": 615,
+        "mainScrollWidth": 615
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 2.5,
+      "css": {
+        "width": 546,
+        "height": 307
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          546,
+          307
+        ],
+        "mainWidth": 478,
+        "mainScrollWidth": 478
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "css": {
+        "width": 455,
+        "height": 256
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "cpu",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "gpu",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "memory",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "disk",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "network",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "hardware",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "tools",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "diagnostics",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "settings",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "page": "about",
+      "physical": [
+        1366,
+        768
+      ],
+      "scale": 3,
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          455,
+          256
+        ],
+        "mainWidth": 387,
+        "mainScrollWidth": 387
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1920,
+        1080
+      ],
+      "scale": 1,
+      "css": {
+        "width": 1920,
+        "height": 1080
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1920,
+          1080
+        ],
+        "mainWidth": 1674,
+        "mainScrollWidth": 1674
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1920,
+        1080
+      ],
+      "scale": 1.25,
+      "css": {
+        "width": 1536,
+        "height": 864
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1536,
+          864
+        ],
+        "mainWidth": 1290,
+        "mainScrollWidth": 1290
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1920,
+        1080
+      ],
+      "scale": 1.5,
+      "css": {
+        "width": 1280,
+        "height": 720
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1280,
+          720
+        ],
+        "mainWidth": 1034,
+        "mainScrollWidth": 1034
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1920,
+        1080
+      ],
+      "scale": 1.75,
+      "css": {
+        "width": 1097,
+        "height": 617
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1097,
+          617
+        ],
+        "mainWidth": 884,
+        "mainScrollWidth": 884
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1920,
+        1080
+      ],
+      "scale": 2,
+      "css": {
+        "width": 960,
+        "height": 540
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          960,
+          540
+        ],
+        "mainWidth": 876,
+        "mainScrollWidth": 876
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1920,
+        1080
+      ],
+      "scale": 2.5,
+      "css": {
+        "width": 768,
+        "height": 432
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          768,
+          432
+        ],
+        "mainWidth": 684,
+        "mainScrollWidth": 684
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        1920,
+        1080
+      ],
+      "scale": 3,
+      "css": {
+        "width": 640,
+        "height": 360
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          640,
+          360
+        ],
+        "mainWidth": 572,
+        "mainScrollWidth": 572
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        2560,
+        1440
+      ],
+      "scale": 1,
+      "css": {
+        "width": 2560,
+        "height": 1440
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          2560,
+          1440
+        ],
+        "mainWidth": 2314,
+        "mainScrollWidth": 2314
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        2560,
+        1440
+      ],
+      "scale": 1.25,
+      "css": {
+        "width": 2048,
+        "height": 1152
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          2048,
+          1152
+        ],
+        "mainWidth": 1802,
+        "mainScrollWidth": 1802
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        2560,
+        1440
+      ],
+      "scale": 1.5,
+      "css": {
+        "width": 1706,
+        "height": 960
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1706,
+          960
+        ],
+        "mainWidth": 1460,
+        "mainScrollWidth": 1460
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        2560,
+        1440
+      ],
+      "scale": 1.75,
+      "css": {
+        "width": 1462,
+        "height": 822
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1462,
+          822
+        ],
+        "mainWidth": 1216,
+        "mainScrollWidth": 1216
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        2560,
+        1440
+      ],
+      "scale": 2,
+      "css": {
+        "width": 1280,
+        "height": 720
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1280,
+          720
+        ],
+        "mainWidth": 1034,
+        "mainScrollWidth": 1034
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        2560,
+        1440
+      ],
+      "scale": 2.5,
+      "css": {
+        "width": 1024,
+        "height": 576
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1024,
+          576
+        ],
+        "mainWidth": 940,
+        "mainScrollWidth": 940
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        2560,
+        1440
+      ],
+      "scale": 3,
+      "css": {
+        "width": 853,
+        "height": 480
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          853,
+          480
+        ],
+        "mainWidth": 769,
+        "mainScrollWidth": 769
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        3840,
+        2160
+      ],
+      "scale": 1,
+      "css": {
+        "width": 3840,
+        "height": 2160
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          3840,
+          2160
+        ],
+        "mainWidth": 3594,
+        "mainScrollWidth": 3594
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        3840,
+        2160
+      ],
+      "scale": 1.25,
+      "css": {
+        "width": 3072,
+        "height": 1728
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          3072,
+          1728
+        ],
+        "mainWidth": 2826,
+        "mainScrollWidth": 2826
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        3840,
+        2160
+      ],
+      "scale": 1.5,
+      "css": {
+        "width": 2560,
+        "height": 1440
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          2560,
+          1440
+        ],
+        "mainWidth": 2314,
+        "mainScrollWidth": 2314
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        3840,
+        2160
+      ],
+      "scale": 1.75,
+      "css": {
+        "width": 2194,
+        "height": 1234
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          2194,
+          1234
+        ],
+        "mainWidth": 1948,
+        "mainScrollWidth": 1948
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        3840,
+        2160
+      ],
+      "scale": 2,
+      "css": {
+        "width": 1920,
+        "height": 1080
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1920,
+          1080
+        ],
+        "mainWidth": 1674,
+        "mainScrollWidth": 1674
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        3840,
+        2160
+      ],
+      "scale": 2.5,
+      "css": {
+        "width": 1536,
+        "height": 864
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1536,
+          864
+        ],
+        "mainWidth": 1290,
+        "mainScrollWidth": 1290
+      },
+      "passed": true
+    },
+    {
+      "physical": [
+        3840,
+        2160
+      ],
+      "scale": 3,
+      "css": {
+        "width": 1280,
+        "height": 720
+      },
+      "geometry": {
+        "bodyOverflow": false,
+        "mainOverflow": false,
+        "topOverflow": false,
+        "tooWide": [],
+        "viewport": [
+          1280,
+          720
+        ],
+        "mainWidth": 1034,
+        "mainScrollWidth": 1034
+      },
+      "passed": true
+    }
+  ],
+  "uiInteractions": [
+    {
+      "test": "route cpu",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route gpu",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route memory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route disk",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route hardware",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route tools",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route diagnostics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route settings",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route about",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "route overview",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "Ctrl+K search focus",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "search page result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "search navigation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "light theme applied",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "theme persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "SI units persisted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "pause really stops sampler",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "resume really samples",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "real diagnostic report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "missing hardware never forced 100",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "export privacy confirmation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "export cancelled by Escape",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "hardware empty search feedback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "non-Windows tools disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "test": "light 1080P layout",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "limitations": [
+    "Not a Windows runtime or native WebView2 test",
+    "Go1.23.2 is an obsolete evaluation toolchain",
+    "Runtime internal loader fallback remains experimental",
+    "No photographic banner or pixel-perfect claim",
+    "No CPU/GPU temperature, SMART, complete drivers, or serial reveal"
+  ]
+}

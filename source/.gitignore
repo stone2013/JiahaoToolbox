@@ -1,0 +1,8 @@
+/build/
+/test-output/
+/JiahaoToolbox_Data/
+/frontend/node_modules/
+**/__pycache__/
+*.test.exe
+*.out
+*.log

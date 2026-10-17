@@ -1,0 +1,31 @@
+import { esc } from '../services/format.js';
+import { icon } from './icons.js';
+export function toast(message, error = false) { const host = document.getElementById('toasts'); while (host.children.length >= 3)
+    host.firstElementChild?.remove(); const div = document.createElement('div'); div.className = 'toast' + (error ? ' error' : ''); div.innerHTML = icon(error ? 'warning' : 'info') + `<span>${esc(message)}</span>`; host.append(div); setTimeout(() => div.remove(), error ? 7000 : 4400); }
+export function confirm(title, message, label = '确认') {
+    const dialog = document.getElementById('modal');
+    if (dialog.open)
+        dialog.close();
+    document.getElementById('modal-body').innerHTML = `<div class="modal-head"><h2 id="modal-title">${esc(title)}</h2></div><div class="modal-text">${esc(message)}</div><div class="modal-actions"><button class="button" id="modal-cancel" autofocus>取消</button><button class="button primary" id="modal-confirm">${esc(label)}</button></div>`;
+    return new Promise(resolve => { let decided = false; const finish = (v) => { if (decided)
+        return; decided = true; dialog.removeEventListener('close', onClose); dialog.close(); resolve(v); }; const onClose = () => finish(false); dialog.addEventListener('close', onClose, { once: true }); document.getElementById('modal-cancel').onclick = () => finish(false); document.getElementById('modal-confirm').onclick = () => finish(true); dialog.showModal(); document.getElementById('modal-cancel').focus(); });
+}
+export async function copyText(text) { try {
+    await navigator.clipboard.writeText(text);
+}
+catch {
+    const old = document.activeElement;
+    const el = document.createElement('textarea');
+    el.value = text;
+    el.style.cssText = 'position:fixed;left:-9999px;top:0';
+    document.body.append(el);
+    el.select();
+    const ok = document.execCommand('copy');
+    el.remove();
+    old?.focus();
+    if (!ok)
+        throw new Error('系统未允许复制到剪贴板');
+} toast('已复制到剪贴板'); }
+export function showText(title, text) { const d = document.getElementById('modal'); if (d.open)
+    d.close(); document.getElementById('modal-body').innerHTML = `<div class="modal-head"><h2 id="modal-title">${esc(title)}</h2><button id="modal-close" class="icon-button" aria-label="关闭">${icon('close')}</button></div><pre class="modal-code">${esc(text)}</pre><div class="modal-actions"><button id="modal-copy" class="button">${icon('copy')}复制</button><button id="modal-done" class="button primary">关闭</button></div>`; document.getElementById('modal-close').onclick = () => d.close(); document.getElementById('modal-done').onclick = () => d.close(); document.getElementById('modal-copy').onclick = () => { copyText(text).catch(e => toast(String(e), true)); }; d.showModal(); }
+export function download(name, data) { const isText = typeof data === 'string'; const content = isText ? data : JSON.stringify(data, null, 2); const blob = new Blob([content], { type: isText ? 'text/plain;charset=utf-8' : 'application/json;charset=utf-8' }); const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = name; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 30000); toast('已提交保存请求，请查看浏览器或 WebView2 的下载提示'); }

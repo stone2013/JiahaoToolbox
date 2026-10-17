@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const front=path.join(root,'frontend');
+const versionConfig=JSON.parse(fs.readFileSync(path.join(root,'version.json'),'utf8'));
+if(!/^\d+\.\d+\.\d+$/.test(versionConfig.version))throw new Error('version.json must contain a stable MAJOR.MINOR.PATCH version');
+execFileSync(process.execPath,[path.join(root,'scripts','generate-search-index.mjs')],{stdio:'inherit'});
+const local=path.join(front,'node_modules','typescript','bin','tsc');
+if(fs.existsSync(local)) execFileSync(process.execPath,[local,'-p',front],{stdio:'inherit'});
+else execFileSync(process.platform==='win32'?'tsc.cmd':'tsc',['-p',front],{stdio:'inherit',shell:process.platform==='win32'});
+fs.mkdirSync(path.join(front,'dist'),{recursive:true});
+fs.writeFileSync(path.join(front,'dist','index.html'),fs.readFileSync(path.join(front,'index.html'),'utf8').replaceAll('__APP_VERSION__',versionConfig.version).replace('/* STARTUP_CRITICAL */',fs.readFileSync(path.join(front,'src/styles/startup.css'),'utf8')));
+for(const dir of ['styles','assets'])fs.cpSync(path.join(front,'src',dir),path.join(front,'dist','assets',dir),{recursive:true});
+console.log('Built offline frontend. No CDN, web fonts, or runtime packages.');

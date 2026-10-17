@@ -1,0 +1,79 @@
+name: Windows build and checks
+
+on:
+  pull_request:
+    paths:
+      - 'source/**'
+      - '.github/workflows/release.yml'
+  push:
+    branches: [main, master]
+    paths:
+      - 'source/**'
+      - '.github/workflows/release.yml'
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      publish_release:
+        description: 'Publish a GitHub Release for the matching vX.Y.Z tag (requires deliberate confirmation)'
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: source/go.mod
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: source/frontend/package-lock.json
+      - name: Install Inno Setup 6
+        shell: pwsh
+        run: choco install innosetup --no-progress -y
+      - name: Build and test
+        shell: pwsh
+        run: |
+          Set-Location source
+          npm --prefix frontend ci
+          go test -count=1 ./...
+          go vet ./...
+          npm --prefix frontend run typecheck
+          node tests/search-ui.test.mjs
+          .\scripts\build-release.ps1 -Output "${{ github.workspace }}\artifact"
+          if ($LASTEXITCODE -ne 0) { throw 'Release build failed.' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: JiahaoToolbox-${{ github.ref_name }}
+          path: artifact/*
+          if-no-files-found: error
+
+  release:
+    if: github.event_name == 'workflow_dispatch' && inputs.publish_release == true && startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: windows-2022
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: JiahaoToolbox-${{ github.ref_name }}
+          path: artifact
+      - name: Verify matching version and publish explicit release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $v = (Get-Content -Raw source/version.json | ConvertFrom-Json).version
+          if ($env:GITHUB_REF_NAME -ne "v$v") { throw "Tag must match version.json (v$v)." }
+          gh release view $env:GITHUB_REF_NAME --repo stone2013/JiahaoToolbox 2>$null
+          if ($LASTEXITCODE -eq 0) { throw 'Release already exists; refusing to replace it.' }
+          gh release create $env:GITHUB_REF_NAME artifact/JiahaoToolbox_v${v}.exe artifact/JiahaoToolbox_v${v}_Setup_x64.exe artifact/JiahaoToolbox_v${v}_Portable.zip artifact/SHA256SUMS.txt artifact/CHANGELOG.md --repo stone2013/JiahaoToolbox --title "嘉豪工具箱 v${v}" --notes-file artifact/RELEASE_GUIDE.md

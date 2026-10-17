@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "windows": "10.0.26200",
+  "goTestCases": 51,
+  "browserStartupCases": [
+    "display-theme:dark",
+    "display-theme:light",
+    "display-theme:dark",
+    "display-theme:light",
+    "display-theme:dark",
+    "display-theme:light",
+    "slow-initialization:dark",
+    "slow-initialization:light",
+    "main-resource",
+    "stylesheet",
+    "javascript",
+    "backend",
+    "handshake",
+    "timeout",
+    "system-reduced-motion",
+    "close-during-init"
+  ],
+  "nativeSequentialStarts": 10,
+  "nativeEarlyClose": true,
+  "hotReadyMedianMS": 1858,
+  "baselineReadyMedianMS": 1874,
+  "sha256": "90115bfeb826b33eee2f098521009922a5b37b1aad8bd724a467c453d2a11591"
+}

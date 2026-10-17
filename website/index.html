@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#081321" />
+  <title>嘉豪工具箱 — 专业硬件监控与系统工具</title>
+  <meta name="description" content="嘉豪工具箱（Jiahao Toolbox）是一款集实时硬件监控、系统信息、智能拼音搜索和实用系统工具于一体的 Windows 桌面软件。由 SMV6 制作，支持 Windows 10/11 x64。" />
+  <link rel="canonical" href="https://stone2013.github.io/JiahaoToolbox/" />
+  <link rel="icon" type="image/svg+xml" href="%BASE_URL%logo.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:title" content="嘉豪工具箱 — 专业硬件监控与系统工具" />
+  <meta property="og:description" content="真实监控，高效工具，流畅体验。探索嘉豪工具箱。" />
+  <meta property="og:url" content="https://stone2013.github.io/JiahaoToolbox/" />
+  <meta property="og:image" content="https://stone2013.github.io/JiahaoToolbox/images/og-cover.png" />
+  <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"嘉豪工具箱","alternateName":"Jiahao Toolbox","operatingSystem":"Windows 10/11 x64","applicationCategory":"UtilitiesApplication","url":"https://stone2013.github.io/JiahaoToolbox/","downloadUrl":"https://github.com/stone2013/JiahaoToolbox/releases","author":{"@type":"Organization","name":"SMV6"},"offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 20c-4 1-4-2-6-2m12 4v-3.4c0-1 .1-1.5-.5-2.1 3.2-.4 6.5-1.6 6.5-7a5.4 5.4 0 0 0-1.5-3.8 5 5 0 0 0-.1-3.8S18.2 1.5 15 3.3a13 13 0 0 0-6 0C5.8 1.5 4.6 1.9 4.6 1.9a5 5 0 0 0-.1 3.8A5.4 5.4 0 0 0 3 9.5c0 5.4 3.3 6.6 6.5 7-.6.6-.5 1.2-.5 2.1V22"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="3"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3m6-3v3M9 19v3m6-3v3M2 9h3m-3 6h3M19 9h3m-3 6h3"/></symbol>
+    <symbol id="i-gpu" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="13" rx="2"/><circle cx="11" cy="11.5" r="3.5"/><path d="M17 8v7M6 18v3m4-3v3m4-3v3"/></symbol>
+    <symbol id="i-memory" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 9v6m4-6v6m4-6v6m4-6v6M6 18v3m4-3v3m4-3v3m4-3v3"/></symbol>
+    <symbol id="i-disk" viewBox="0 0 24 24"><path d="m5 4-3 12v4h20v-4L19 4H5Zm-3 12h20M6 18h.01M10 18h.01"/></symbol>
+    <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M5 15l4-6 4 4 7-8"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 24 24"><path d="M20.7 13.6A9 9 0 0 1 10.4 3.3 9 9 0 1 0 20.7 13.6Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6l9-4Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14 3a6 6 0 0 0-7 7L2 17a3 3 0 0 0 5 4l7-7a6 6 0 0 0 7-7l-4 4-4-4 4-4Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><path d="m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 10 9-5M3 7l9 5m0 0v10M7.5 4.5l9 5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </defs></svg>
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="嘉豪工具箱首页"><img src="%BASE_URL%logo.svg" width="32" height="35" alt="" /><span>嘉豪工具箱</span><span class="brand-divider"></span><span class="smv6">SMV6</span></a>
+      <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      <nav id="site-nav" aria-label="主导航">
+        <a href="#home" aria-current="page">首页</a><a href="#features">功能</a><a href="#screenshots">软件截图</a><a href="#download">下载</a>
+        <a class="nav-github" href="https://github.com/stone2013/JiahaoToolbox" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub<svg class="icon small-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-halo" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <a class="release-pill" href="#download"><span class="status-dot"></span>__RELEASE_BADGE__<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="eyebrow">JIAHAO TOOLBOX</p>
+          <h1 id="hero-title">嘉豪工具箱</h1>
+          <p class="hero-subtitle">专业硬件监控<br />与系统工具</p>
+          <p class="hero-description">一款集实时硬件监控、系统信息、智能搜索和实用系统工具于一体的 Windows 桌面软件。</p>
+          <div class="button-row">
+            <a class="button primary" href="https://github.com/stone2013/JiahaoToolbox/releases"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>免费下载</a>
+            <a class="button secondary" href="https://github.com/stone2013/JiahaoToolbox" target="_blank" rel="noopener noreferrer">查看 GitHub<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <p class="platform-note">Windows 10 / 11 x64 <span>·</span> 简体中文 <span>·</span> 免费使用</p>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-label"><span class="tiny-cube"></span>你的系统，尽在眼前<span class="visual-label-right">SYSTEM OVERVIEW</span></div>
+          <button class="screenshot hero-screen" type="button" data-lightbox="images/overview.webp" data-caption="系统总览 · 深色主题" aria-label="放大查看系统总览真实截图">
+            <img src="%BASE_URL%images/overview.webp" srcset="%BASE_URL%images/overview-small.webp 830w, %BASE_URL%images/overview.webp 1660w" sizes="(max-width: 800px) 94vw, 58vw" width="1660" height="1080" alt="嘉豪工具箱真实系统总览，包含CPU、内存、磁盘、网络与实时性能曲线" fetchpriority="high" />
+            <span class="image-expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg>查看原图</span>
+          </button>
+          <div class="visual-footer"><span><span class="status-dot"></span>真实软件界面</span><span>离线监控 · 在线可选测速</span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>真实监控</span><span>高效工具</span><span>流畅体验</span><a href="#features">向下探索<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+    </section>
+
+    <section class="section features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">BUILT FOR EVERYDAY</p><h2 id="features-title">常用功能，集中就位。</h2></div><p>从硬件状态到系统入口，<br />在同一个工具箱里轻松找到。</p></div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span><h3>CPU 监控</h3><p>查看处理器负载与逻辑处理器变化，掌握当前运行状态。</p><span class="card-index">01</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-gpu"/></svg></span><h3>GPU 监控</h3><p>查看显卡信息与当前设备可用的监控指标。</p><span class="card-index">02</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-memory"/></svg></span><h3>内存监控</h3><p>总容量、已用与可用内存，清楚呈现。</p><span class="card-index">03</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-disk"/></svg></span><h3>磁盘监控</h3><p>查看分区容量与存储状态，区分容量使用率和活动率。</p><span class="card-index">04</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg></span><h3>网络监控</h3><p>观察实时上传、下载速度与网卡流量变化。</p><span class="card-index">05</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span><h3>实时性能曲线</h3><p>用时间轴查看负载变化，让真实采样平滑呈现。</p><span class="card-index">06</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span><h3>中文与拼音搜索</h3><p>中文、全拼或首字母，快速找到页面和系统工具。</p><span class="card-index">07</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-theme"/></svg></span><h3>深浅主题</h3><p>深色专注，浅色清晰。按习惯切换工作视野。</p><span class="card-index">08</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>系统诊断</h3><p>通过只读检查了解当前状态，逐项查看实际结果。</p><span class="card-index">09</span></article>
+          <article class="feature-card reveal"><span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-tool"/></svg></span><h3>Windows 系统工具</h3><p>集中打开任务管理器、系统信息等常用系统入口。</p><span class="card-index">10</span></article>
+        </div>
+        <p class="section-note">可用的硬件指标因设备、驱动和系统权限而异。监控动画只改变显示方式，不改变实际采样。</p>
+      </div>
+    </section>
+
+    <section class="section screenshots-section" id="screenshots" aria-labelledby="screenshots-title">
+      <div class="container">
+        <div class="section-heading reveal"><div><p class="eyebrow">A CLOSER LOOK</p><h2 id="screenshots-title">每一屏，都是真实体验。</h2></div><p>来自实际运行的软件。<br />点击截图，查看细节。</p></div>
+        <div class="gallery">
+          <figure class="gallery-card reveal"><button class="screenshot" type="button" data-lightbox="images/cpu.webp" data-caption="CPU 监控 · 处理器负载与实时曲线" aria-label="放大查看CPU监控截图"><img src="%BASE_URL%images/cpu-small.webp" srcset="%BASE_URL%images/cpu-small.webp 830w, %BASE_URL%images/cpu.webp 1660w" sizes="(max-width: 650px) 94vw, 46vw" width="1660" height="1080" alt="CPU监控实际页面，展示实时曲线和处理器负载" loading="lazy" decoding="async" /><span class="image-expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></button><figcaption><span>负载变化，一目了然</span><span>CPU 监控</span></figcaption></figure>
+          <figure class="gallery-card reveal"><button class="screenshot" type="button" data-lightbox="images/search.webp" data-caption="智能拼音搜索 · xitong 的真实搜索结果" aria-label="放大查看拼音搜索截图"><img src="%BASE_URL%images/search-small.webp" srcset="%BASE_URL%images/search-small.webp 830w, %BASE_URL%images/search.webp 1660w" sizes="(max-width: 650px) 94vw, 46vw" width="1660" height="1080" alt="输入xitong后，真实显示系统总览、系统工具和系统诊断等搜索结果" loading="lazy" decoding="async" /><span class="image-expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></button><figcaption><span>想到什么，就搜什么</span><span>拼音搜索</span></figcaption></figure>
+          <figure class="gallery-card reveal"><button class="screenshot" type="button" data-lightbox="images/themes.webp" data-caption="浅色主题 · 系统总览" aria-label="放大查看浅色主题截图"><img src="%BASE_URL%images/themes-small.webp" srcset="%BASE_URL%images/themes-small.webp 830w, %BASE_URL%images/themes.webp 1920w" sizes="(max-width: 650px) 94vw, 46vw" width="1920" height="1080" alt="嘉豪工具箱真实浅色主题系统总览" loading="lazy" decoding="async" /><span class="image-expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></button><figcaption><span>换一种，清晰视野</span><span>浅色主题</span></figcaption></figure>
+          <figure class="gallery-card reveal"><button class="screenshot" type="button" data-lightbox="images/diagnostics.webp" data-caption="系统诊断 · 录制时本机的实际检查结果" aria-label="放大查看系统诊断截图"><img src="%BASE_URL%images/diagnostics-small.webp" srcset="%BASE_URL%images/diagnostics-small.webp 830w, %BASE_URL%images/diagnostics.webp 1920w" sizes="(max-width: 650px) 94vw, 46vw" width="1920" height="1080" alt="系统诊断实际页面，展示本机只读检查结果" loading="lazy" decoding="async" /><span class="image-expand"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg></span></button><figcaption><span>系统状态，逐项了解</span><span>只读诊断</span></figcaption></figure>
+        </div>
+        <p class="section-note">截图为 v4.4.0 实机界面，数据代表录制时状态；个人标识已遮挡。诊断评分仅代表当次可检查项目。</p>
+      </div>
+    </section>
+
+    <section class="section film-section" id="film" aria-labelledby="film-title">
+      <div class="container">
+        <div class="film-heading reveal"><div><p class="eyebrow">SEE IT IN ACTION</p><h2 id="film-title">用 90 秒，认识嘉豪工具箱。</h2><p>真实操作，真实呈现。由 SMV6 制作。</p></div><span class="film-tag">1080P / 60FPS <span>·</span> 含音乐与音效</span></div>
+        <div class="video-shell reveal"><video id="promo-video" controls playsinline preload="none" poster="%BASE_URL%images/video-poster.webp" width="1920" height="1080" aria-label="嘉豪工具箱90秒真实操作宣传片"><source src="%BASE_URL%media/jiahao-toolbox-promo.mp4" type="video/mp4" />你的浏览器无法播放此视频。<a href="%BASE_URL%media/jiahao-toolbox-promo.mp4">下载宣传片</a></video><button id="play-promo" class="video-play" type="button" hidden aria-label="播放宣传片"><span class="play-circle"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span><span>播放宣传片<small>01:30 · SMV6</small></span></button></div><p id="video-error" class="section-note" role="status" hidden>视频暂时无法播放。你可以<a href="%BASE_URL%media/jiahao-toolbox-promo.mp4">下载宣传片</a>后观看。</p>
+        <p class="section-note">手动播放，不自动开启声音。包括页面切换、拼音搜索、系统工具、主题与诊断实录。</p>
+      </div>
+    </section>
+
+    <section class="section download-section" id="download" aria-labelledby="download-title">
+      <div class="container download-layout">
+        <div class="download-copy reveal"><p class="eyebrow">READY WHEN YOU ARE</p><h2 id="download-title">把常用工具，<br />带到桌面。</h2><p>选择安装版或便携版，<br />开始使用嘉豪工具箱。</p><div class="requirements"><h3>系统要求</h3><p>Windows 10 / 11 · x64</p><p>Microsoft Edge WebView2 Runtime</p><a href="https://developer.microsoft.com/microsoft-edge/webview2/" target="_blank" rel="noopener noreferrer">获取微软官方运行时<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div></div>
+        <div class="download-card reveal"><div class="release-header"><img src="%BASE_URL%logo.svg" width="46" height="50" alt="" loading="lazy" /><div><h3>嘉豪工具箱</h3><p>JIAHAO TOOLBOX</p></div><span class="version-badge">__RELEASE_VERSION__</span></div><p class="release-date">__RELEASE_DATE_LABEL__ <time>__RELEASE_DATE__</time></p><div class="download-buttons">__RELEASE_DOWNLOADS__</div><a class="release-link" href="https://github.com/stone2013/JiahaoToolbox/releases">查看所有版本与 SHA256 校验文件<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><div class="release-changes"><h4>本版更新</h4><ul>__RELEASE_CHANGES__</ul><a href="__RELEASE_LINK__">完整更新日志<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><p class="release-verification">发布信息来自 GitHub · 最近同步 __RELEASE_CHECKED__</p></div>
+      </div>
+      <div class="container"><div class="release-notice"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg><p>当前构建未签名，完整安装、升级和卸载测试尚未完成。请阅读 <a href="https://github.com/stone2013/JiahaoToolbox/releases">Release 测试说明</a>。软件更新采用官方页面手动下载，不会静默安装。</p></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><img src="%BASE_URL%logo.svg" width="28" height="31" alt="" /><span>嘉豪工具箱</span></a><p>JIAHAO TOOLBOX <span>·</span> Made by <strong>SMV6</strong></p><div><a href="https://github.com/stone2013/JiahaoToolbox">GitHub</a><a href="https://github.com/stone2013/JiahaoToolbox/issues">反馈问题</a><a href="https://github.com/stone2013/JiahaoToolbox/releases">软件下载</a></div></div></footer>
+  <dialog id="screenshot-dialog" aria-labelledby="lightbox-caption"><div class="lightbox-bar"><p id="lightbox-caption"></p><button class="close-lightbox" type="button" aria-label="关闭截图"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></div><img class="lightbox-image" alt="" /></dialog>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

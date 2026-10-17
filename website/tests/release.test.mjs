@@ -1,0 +1,18 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { normalizeRelease, fetchRelease, releasesUrl } from '../scripts/release-data.mjs';
+const fixture = () => ({ tag_name:'v4.4.0', published_at:'2026-10-17T10:42:10Z', html_url:releasesUrl+'/tag/v4.4.0', draft:false, prerelease:false, body:'## 本版内容\n\n- 安装器\n- 拼音搜索\n\n## 测试\n- 不应混入', assets:[{name:'JiahaoToolbox_v4.4.0_Setup_x64.exe',browser_download_url:releasesUrl+'/download/v4.4.0/JiahaoToolbox_v4.4.0_Setup_x64.exe',size:4770799,state:'uploaded'}] });
+test('真实版本、发布日期和官方附件被保留',()=>{ const r=normalizeRelease(fixture());assert.equal(r.version,'4.4.0');assert.equal(r.publishedAt,fixture().published_at);assert.equal(r.assets[0].bytes,4770799); });
+test('无Release生成即将发布状态，不虚构版本',()=>{const r=normalizeRelease(null);assert.equal(r.available,false);assert.equal(r.version,null);assert.deepEqual(r.assets,[]);});
+test('拒绝预发布版本',()=>{assert.throws(()=>normalizeRelease({...fixture(),prerelease:true}));});
+test('拒绝草稿',()=>{assert.throws(()=>normalizeRelease({...fixture(),draft:true}));});
+test('拒绝无效版本字符串',()=>{assert.throws(()=>normalizeRelease({...fixture(),tag_name:'../../fake'}));});
+test('拒绝非官方发布页',()=>{assert.throws(()=>normalizeRelease({...fixture(),html_url:'https://example.com/fake'}));});
+test('拒绝无效日期',()=>{assert.throws(()=>normalizeRelease({...fixture(),published_at:'tomorrow'}));});
+test('不呈现外部镜像/篡改附件URL',()=>{const f=fixture();f.assets[0].browser_download_url='https://example.com/tool.exe';assert.deepEqual(normalizeRelease(f).assets,[]);});
+test('不呈现无效体积或未上传附件',()=>{const f=fixture();f.assets[0].size=-1;assert.deepEqual(normalizeRelease(f).assets,[]);f.assets[0].size=1;f.assets[0].state='new';assert.deepEqual(normalizeRelease(f).assets,[]);});
+test('更新条目仅摘取本版内容',()=>assert.deepEqual(normalizeRelease(fixture()).changelog,['安装器','拼音搜索']));
+test('HTTP404作为无正式版本处理',async()=>assert.equal((await fetchRelease(async()=>({status:404}))).available,false));
+test('HTTP限流和失败不伪装成无版本',async()=>{for(const status of [403,429,500])await assert.rejects(fetchRelease(async()=>({status,ok:false})),new RegExp(String(status)));});
+test('联网失败保持可识别的失败信号',async()=>assert.rejects(fetchRelease(async()=>{throw new Error('offline');}),/offline/));
+test('成功响应走同一规范化服务',async()=>assert.equal((await fetchRelease(async()=>({status:200,ok:true,json:async()=>fixture()}))).version,'4.4.0'));

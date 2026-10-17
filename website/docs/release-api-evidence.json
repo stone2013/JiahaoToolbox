@@ -1,0 +1,6 @@
+{
+  "tag_name": "v4.4.0",
+  "published_at": "2026-10-17T10:42:10Z",
+  "html_url": "https://github.com/stone2013/JiahaoToolbox/releases/tag/v4.4.0",
+  "body": "# 嘉豪工具箱 v4.4.0\n\n适用于 Windows 10 / Windows 11 x64。首次公开发布安装版与便携版。\n\n## 下载\n\n- **安装版**：`JiahaoToolbox_v4.4.0_Setup_x64.exe`。默认当前用户安装，支持目录选择、桌面/开始菜单快捷方式及卸载。\n- **便携版**：`JiahaoToolbox_v4.4.0_Portable.zip`。解压后运行。\n- `SHA256SUMS.txt` 提供 EXE、安装器和便携包的完整性校验值。\n- 完整源码可通过本页 GitHub 自动生成的 Source code ZIP/TAR 下载，包含 source/ 与 GitHub Actions 工作流。\n\n运行需要 Microsoft Edge WebView2 Runtime；缺失时请通过 [微软官方页面](https://developer.microsoft.com/microsoft-edge/webview2/) 安装。安装器不会静默下载第三方组件。\n\n## 本版内容\n\n- 简体中文 Windows x64 安装器，默认按当前用户安装；支持覆盖升级，卸载默认保留个人配置与历史数据。\n- 官方 GitHub Release 更新检查，语义化版本比较，以及手动下载更新入口。\n- 修复经典绿色 CMD 启动，使用独立 Windows 控制台。\n- 保留硬件监控、实时曲线与动画、中文及拼音搜索、深浅主题、系统工具、只读诊断、启动动画及网络/磁盘测速。\n\n## 签名、安全与测试状态\n\n**此构建未做 Authenticode 代码签名，也没有配置可信更新清单公钥。** Windows 可能提示未知发布者，请核对来源；不要关闭或绕过系统安全保护。\n\n当前更新功能仅检查官方 Release 并打开官方页面，**不自动下载或执行安装包**。SHA256 用于检查文件损坏，不能独立证明发布者身份。\n\n构建时 Go 单元测试、前端自动化测试及打包通过；发布前再次核对了 SHA256 和便携 ZIP 的 CRC。**首次安装、覆盖升级、自定义目录、卸载及配置保留等完整 Windows 安装测试矩阵尚未完成**，详见 `TEST_REPORT.md`。发布不表示未测项目已经通过。\n\n测试报告中“暂无正式 Release”描述的是构建时的历史状态；本 Release 是经维护者明确确认后的首次发布。\n\n源码对应提交：`6eee62aa54ec528873a7c8969fe0c18ce99f4f54`。完整变化、测试边界和构建方法见附件及源码。\n"
+}

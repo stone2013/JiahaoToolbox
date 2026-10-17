@@ -1,0 +1,221 @@
+[
+  {
+    "id": "overview",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-44-43.mkv",
+    "sourceSHA256": "009c3835c54e7ff3e078e17faa598138e1da1dd5b5d497205b39e26473c81b54",
+    "inSeconds": 24,
+    "durationSeconds": 32,
+    "speed": 1,
+    "privacyMasks": [
+      [
+        565,
+        236,
+        220,
+        28
+      ],
+      [
+        1440,
+        460,
+        310,
+        30
+      ]
+    ],
+    "output": "project/remotion/public/media/overview.mp4"
+  },
+  {
+    "id": "cpu",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-44-43.mkv",
+    "sourceSHA256": "009c3835c54e7ff3e078e17faa598138e1da1dd5b5d497205b39e26473c81b54",
+    "inSeconds": 1,
+    "durationSeconds": 5,
+    "speed": 1,
+    "privacyMasks": [],
+    "output": "project/remotion/public/media/cpu.mp4"
+  },
+  {
+    "id": "gpu",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-44-43.mkv",
+    "sourceSHA256": "009c3835c54e7ff3e078e17faa598138e1da1dd5b5d497205b39e26473c81b54",
+    "inSeconds": 6,
+    "durationSeconds": 3.5,
+    "speed": 1,
+    "privacyMasks": [],
+    "output": "project/remotion/public/media/gpu.mp4"
+  },
+  {
+    "id": "memory",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-44-43.mkv",
+    "sourceSHA256": "009c3835c54e7ff3e078e17faa598138e1da1dd5b5d497205b39e26473c81b54",
+    "inSeconds": 10,
+    "durationSeconds": 3.5,
+    "speed": 1,
+    "privacyMasks": [],
+    "output": "project/remotion/public/media/memory.mp4"
+  },
+  {
+    "id": "disk",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-44-43.mkv",
+    "sourceSHA256": "009c3835c54e7ff3e078e17faa598138e1da1dd5b5d497205b39e26473c81b54",
+    "inSeconds": 14,
+    "durationSeconds": 3.5,
+    "speed": 1,
+    "privacyMasks": [],
+    "output": "project/remotion/public/media/disk.mp4"
+  },
+  {
+    "id": "network",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-44-43.mkv",
+    "sourceSHA256": "009c3835c54e7ff3e078e17faa598138e1da1dd5b5d497205b39e26473c81b54",
+    "inSeconds": 18,
+    "durationSeconds": 3.5,
+    "speed": 1,
+    "privacyMasks": [
+      [
+        655,
+        714,
+        300,
+        35
+      ]
+    ],
+    "output": "project/remotion/public/media/network.mp4"
+  },
+  {
+    "id": "search",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-46-11.mkv",
+    "sourceSHA256": "5a5fbf13a9df0971b24c6c962ce99d4c2f7fdc3ea1874037fb53c7b97b0e4354",
+    "inSeconds": 0,
+    "durationSeconds": 10,
+    "speed": 1,
+    "privacyMasks": [
+      [
+        565,
+        236,
+        220,
+        28
+      ],
+      [
+        1440,
+        460,
+        310,
+        30
+      ]
+    ],
+    "output": "project/remotion/public/media/search.mp4"
+  },
+  {
+    "id": "tool-click",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-46-11.mkv",
+    "sourceSHA256": "5a5fbf13a9df0971b24c6c962ce99d4c2f7fdc3ea1874037fb53c7b97b0e4354",
+    "inSeconds": 10,
+    "durationSeconds": 3,
+    "speed": 1,
+    "privacyMasks": [],
+    "output": "project/remotion/public/media/tool-click.mp4"
+  },
+  {
+    "id": "taskmgr",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-42-21.mkv",
+    "sourceSHA256": "609395ec40c673006d84a76e1a7229199c028e83fd7be40a06d4eb90c7bc282a",
+    "inSeconds": 2,
+    "durationSeconds": 4,
+    "speed": 1,
+    "privacyMasks": [
+      [
+        640,
+        180,
+        282,
+        890
+      ]
+    ],
+    "output": "project/remotion/public/media/taskmgr.mp4"
+  },
+  {
+    "id": "info-launch",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-50-51.mkv",
+    "sourceSHA256": "67ac101a8ef1ec6b09d164e541c7f5577c34f128af0613bef97ee5de0f3d7145",
+    "inSeconds": 1,
+    "durationSeconds": 4,
+    "speed": 1,
+    "privacyMasks": [],
+    "output": "project/remotion/public/media/info-launch.mp4"
+  },
+  {
+    "id": "msinfo",
+    "source": "promo-film\\raw\\Jiahao_2026-10-17_16-43-34.mkv",
+    "sourceSHA256": "1afc49b3ab38f0686c05261876eecdb57e9891a84bad568408a4e0dac226a293",
+    "inSeconds": 2,
+    "durationSeconds": 4,
+    "speed": 1,
+    "privacyMasks": [
+      [
+        833,
+        208,
+        540,
+        28
+      ],
+      [
+        833,
+        657,
+        540,
+        29
+      ]
+    ],
+    "output": "project/remotion/public/media/msinfo.mp4"
+  },
+  {
+    "id": "themes",
+    "source": "promo-film\\media\\capture\\02_themes.mp4",
+    "sourceSHA256": "91905276a4359e7ba6edb8d08f7d0238767a215c67dd2886bc8418339604529a",
+    "inSeconds": 0,
+    "durationSeconds": 8,
+    "speed": 1,
+    "privacyMasks": [
+      [
+        510,
+        278,
+        240,
+        36
+      ],
+      [
+        1515,
+        550,
+        365,
+        45
+      ]
+    ],
+    "output": "project/remotion/public/media/themes.mp4"
+  },
+  {
+    "id": "diagnostics",
+    "source": "promo-film\\media\\capture\\06_diagnostics.mp4",
+    "sourceSHA256": "08ec12bddb4d2595b969b112aef03a2c98840444e317e977c278b3ffc253633f",
+    "inSeconds": 0,
+    "durationSeconds": 9,
+    "speed": 1,
+    "privacyMasks": [],
+    "output": "project/remotion/public/media/diagnostics.mp4"
+  },
+  {
+    "id": "startup",
+    "source": "promo-film\\media\\capture\\01_startup.mp4",
+    "sourceSHA256": "84200b518dbb68f5dff0f315f8059d9765ca8bd14b4d492aca0b41c96f5b5fef",
+    "inSeconds": 0,
+    "durationSeconds": 5,
+    "speed": 1,
+    "privacyMasks": [
+      [
+        510,
+        278,
+        240,
+        36
+      ],
+      [
+        1515,
+        550,
+        365,
+        45
+      ]
+    ],
+    "output": "project/remotion/public/media/startup.mp4"
+  }
+]

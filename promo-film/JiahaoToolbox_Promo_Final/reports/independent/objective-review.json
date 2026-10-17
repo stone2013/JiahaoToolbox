@@ -1,0 +1,35 @@
+{
+  "finalFileSHA256": "5977fa94a696262b57eb2ce6c1ac2999b093479b8922aab3c1024bbde039f042",
+  "videoBitstreamHashes": [
+    "SHA256=62d5a43b8f97530ecaa5b5002cd32eb2f8c1e947ccc76b504787dc4103631dbc",
+    "SHA256=62d5a43b8f97530ecaa5b5002cd32eb2f8c1e947ccc76b504787dc4103631dbc"
+  ],
+  "mainAndSFXVideoIdentical": true,
+  "originalIntro180DecodedFramesIdentical": true,
+  "fullDecodeNoErrors": true,
+  "SFXAACResidualDelay": [
+    {
+      "targetSeconds": 48.8166667,
+      "outputLagSamples": 0,
+      "outputLagFrames60fps": 0.0,
+      "normalizedCorrelation": 0.9881411232515912
+    },
+    {
+      "targetSeconds": 56.7166667,
+      "outputLagSamples": 0,
+      "outputLagFrames60fps": 0.0,
+      "normalizedCorrelation": 0.9943730684568008
+    },
+    {
+      "targetSeconds": 63.6333333,
+      "outputLagSamples": 0,
+      "outputLagFrames60fps": 0.0,
+      "normalizedCorrelation": 0.9988364956374686
+    }
+  ],
+  "audioAnalysis": {
+    "integratedLUFS": "-15.99",
+    "truePeakDBTP": "-1.58",
+    "longSilenceEvents": []
+  }
+}

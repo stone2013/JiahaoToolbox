@@ -1,0 +1,35 @@
+{
+  "sfxOnlyVideoBitstreamIdentical": true,
+  "file": "JiahaoToolbox_Promo_Final_1080p60.mp4",
+  "sha256": "5977fa94a696262b57eb2ce6c1ac2999b093479b8922aab3c1024bbde039f042",
+  "video": {
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": "60/1",
+    "frames": 5400,
+    "duration": "90.000000"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": "48000",
+    "channels": 2,
+    "duration": "90.000000",
+    "integratedLUFS": "-15.99",
+    "truePeakDBTP": "-1.58",
+    "minRmsDBFSFrom4To88s": -16.3,
+    "longSilenceEvents": []
+  },
+  "fullDecode": "passed without errors",
+  "originalIntro180DecodedFramesIdentical": true,
+  "pureBlackEvents": [
+    "[blackdetect @ 00000214be9bbe00] black_start:0 black_end:0.1 black_duration:0.1"
+  ],
+  "liveDisplay10s": {
+    "frames": 600,
+    "uniqueHashes": 600,
+    "scope": "Output movement check only; camera motion also changes pixels. Not a UI or hardware FPS benchmark."
+  },
+  "avStartDifferenceSeconds": 0.0,
+  "avDurationDifferenceSeconds": 0.0
+}

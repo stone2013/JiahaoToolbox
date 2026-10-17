@@ -38,8 +38,11 @@ test('导航和功能条目可用，移动菜单支持Escape', async ({ page }) 
 
 test('所有下载来源和GitHub按钮正确',async({page})=>{
   await page.goto('./');
-  await expect(page.getByRole('link',{name:'免费下载',exact:true})).toHaveAttribute('href','https://github.com/stone2013/JiahaoToolbox/releases');
-  await expect(page.getByRole('link',{name:'查看 GitHub',exact:true})).toHaveAttribute('href','https://github.com/stone2013/JiahaoToolbox');
+  await expect(page.getByRole('link',{name:'免费下载',exact:true})).toHaveAttribute('href','#download');
+  await expect(page.getByRole('link',{name:'查看 GitHub',exact:true})).toHaveCount(0);
+  await page.getByRole('link',{name:'免费下载',exact:true}).click();
+  await expect(page).toHaveURL(/#download$/);
+  await expect(page.locator('.runtime-notice')).toBeInViewport();
   if(release.available){await expect(page.locator('.version-badge')).toHaveText('v'+release.version);for(const a of release.assets){await expect(page.locator(`.download-buttons a[href="${a.url}"]`)).toHaveCount(1);}}
   for(const a of await page.locator('.download-buttons a').all())expect(await a.getAttribute('href')).toMatch(/^https:\/\/github\.com\/stone2013\/JiahaoToolbox\/releases/);
 });

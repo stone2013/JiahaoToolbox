@@ -60,12 +60,27 @@ test('视频按需加载并实际播放1080p片源',async({page})=>{
   let loaded=false;page.on('request',r=>{if(r.url().endsWith('.mp4'))loaded=true;});
   await page.goto('./');await page.waitForTimeout(300);expect(loaded).toBe(false);
   const v=page.locator('#promo-video');await v.scrollIntoViewIfNeeded();await v.evaluate((el:HTMLVideoElement)=>{el.muted=true;});
+  await expect(page.getByRole('heading',{name:'官方宣传片',exact:true})).toBeVisible();
+  await expect(page.getByText('SMV6 出品 · 嘉豪工具箱功能展示与实际演示',{exact:true})).toBeVisible();
+  await expect(page.getByRole('link',{name:'下载嘉豪工具箱',exact:true})).toHaveAttribute('href','https://github.com/stone2013/JiahaoToolbox/releases');
+  await expect(v).toHaveAttribute('controls','');
+  expect(await v.getAttribute('autoplay')).toBeNull();
   const box=await v.boundingBox();expect(box).not.toBeNull();
+  expect(box!.width / box!.height).toBeCloseTo(16 / 9, 2);
   await page.getByRole('button',{name:'播放宣传片',exact:true}).click();
   await expect.poll(()=>v.evaluate((el:HTMLVideoElement)=>el.currentTime)).toBeGreaterThan(0);
   const metadata=await v.evaluate((el:HTMLVideoElement)=>({width:el.videoWidth,height:el.videoHeight,duration:el.duration,error:el.error?.code??null}));
   expect(metadata.width).toBe(1920);expect(metadata.height).toBe(1080);expect(metadata.duration).toBeCloseTo(90,1);expect(metadata.error).toBeNull();expect(loaded).toBe(true);
   await v.evaluate((el:HTMLVideoElement)=>el.pause());
+});
+
+test('损坏视频源显示加载失败提示和下载链接',async({page})=>{
+  await page.route('**/media/jiahao-toolbox-promo.mp4',route=>route.fulfill({status:200,contentType:'video/mp4',body:'Controlled invalid MP4 test fixture'}));
+  await page.goto('./');
+  await page.getByRole('button',{name:'播放宣传片',exact:true}).click();
+  await expect(page.locator('#video-error')).toBeVisible();
+  await expect(page.locator('#video-error a')).toHaveAttribute('href','/JiahaoToolbox/media/jiahao-toolbox-promo.mp4');
+  await expect(page.getByRole('link',{name:'下载嘉豪工具箱',exact:true})).toHaveAttribute('href','https://github.com/stone2013/JiahaoToolbox/releases');
 });
 
 test('减少动画偏好与404返回链接',async({page})=>{

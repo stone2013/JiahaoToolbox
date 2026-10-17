@@ -95,9 +95,13 @@ const playButton = document.querySelector<HTMLButtonElement>('#play-promo');
 const videoError = document.querySelector<HTMLElement>('#video-error');
 if (video && playButton) {
   playButton.hidden = false;
+  const showVideoError = (): void => { if(videoError) videoError.hidden = false; playButton.hidden = false; };
   playButton.addEventListener('click', () => {
-    video.play().catch(() => { if(videoError) videoError.hidden = false; });
+    if (video.error) video.load();
+    video.play().catch(showVideoError);
   });
   video.addEventListener('play', () => { playButton.hidden = true; if(videoError) videoError.hidden = true; });
-  video.addEventListener('error', () => { if(videoError) videoError.hidden = false; });
+  video.addEventListener('error', showVideoError);
+  // A failed <source> does not bubble its error to the parent <video>.
+  video.querySelectorAll('source').forEach(source => source.addEventListener('error', showVideoError));
 }

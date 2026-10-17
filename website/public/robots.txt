@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stone2013.github.io/JiahaoToolbox/sitemap.xml

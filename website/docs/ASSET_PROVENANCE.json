@@ -1,0 +1,77 @@
+[
+  {
+    "image": "images/overview.webp",
+    "source": "JiahaoToolbox_Promo_Final/project/remotion/public/media/overview.mp4",
+    "sourceSeconds": 1,
+    "cropOnly": [
+      130,
+      0,
+      1790,
+      1080
+    ],
+    "width": 1660,
+    "height": 1080,
+    "sha256": "0cbb7231bf50b669e5005f77ca75b75e3600d55f250e508511a0da1ebd5ee4cd",
+    "privacy": "Same opaque masks as the reviewed real-operation film; no UI reconstruction or synthetic data."
+  },
+  {
+    "image": "images/cpu.webp",
+    "source": "JiahaoToolbox_Promo_Final/project/remotion/public/media/cpu.mp4",
+    "sourceSeconds": 0.8,
+    "cropOnly": [
+      130,
+      0,
+      1790,
+      1080
+    ],
+    "width": 1660,
+    "height": 1080,
+    "sha256": "74ece3fa1c3bdde5894b7896a6d1e4934ccf35c66924985d26a1e56aa8e4911a",
+    "privacy": "Same opaque masks as the reviewed real-operation film; no UI reconstruction or synthetic data."
+  },
+  {
+    "image": "images/search.webp",
+    "source": "JiahaoToolbox_Promo_Final/project/remotion/public/media/search.mp4",
+    "sourceSeconds": 3.2,
+    "cropOnly": [
+      130,
+      0,
+      1790,
+      1080
+    ],
+    "width": 1660,
+    "height": 1080,
+    "sha256": "a1258a8a95ea6656162f2c70acd4bc83b3ab31ed848d3d5e5da6c7eabecafcc8",
+    "privacy": "Same opaque masks as the reviewed real-operation film; no UI reconstruction or synthetic data."
+  },
+  {
+    "image": "images/themes.webp",
+    "source": "JiahaoToolbox_Promo_Final/project/remotion/public/media/themes.mp4",
+    "sourceSeconds": 3.4,
+    "cropOnly": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "width": 1920,
+    "height": 1080,
+    "sha256": "d335fea5a0e405e17cfb2c1fa2fea4e9f042a02aca62c0c0f82264a29778d4ea",
+    "privacy": "Same opaque masks as the reviewed real-operation film; no UI reconstruction or synthetic data."
+  },
+  {
+    "image": "images/diagnostics.webp",
+    "source": "JiahaoToolbox_Promo_Final/project/remotion/public/media/diagnostics.mp4",
+    "sourceSeconds": 5,
+    "cropOnly": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "width": 1920,
+    "height": 1080,
+    "sha256": "3982510a12b6f188d034a342643d84148c95ac333127e224435df6f189400d18",
+    "privacy": "Same opaque masks as the reviewed real-operation film; no UI reconstruction or synthetic data."
+  }
+]

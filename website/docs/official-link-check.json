@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://github.com/stone2013/JiahaoToolbox",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/stone2013/JiahaoToolbox/releases",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/stone2013/JiahaoToolbox/releases/download/v4.4.0/JiahaoToolbox_v4.4.0_Setup_x64.exe",
+    "status": 200
+  },
+  {
+    "url": "https://github.com/stone2013/JiahaoToolbox/releases/download/v4.4.0/JiahaoToolbox_v4.4.0_Portable.zip",
+    "status": 200
+  }
+]

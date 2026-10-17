@@ -1,0 +1,27 @@
+{
+  "available": true,
+  "checkedAt": "2026-10-17T09:59:49.620Z",
+  "version": "4.4.0",
+  "publishedAt": "2026-10-17T10:42:10Z",
+  "url": "https://github.com/stone2013/JiahaoToolbox/releases/tag/v4.4.0",
+  "changelog": [
+    "简体中文 Windows x64 安装器，默认按当前用户安装；支持覆盖升级，卸载默认保留个人配置与历史数据。",
+    "官方 GitHub Release 更新检查，语义化版本比较，以及手动下载更新入口。",
+    "修复经典绿色 CMD 启动，使用独立 Windows 控制台。",
+    "保留硬件监控、实时曲线与动画、中文及拼音搜索、深浅主题、系统工具、只读诊断、启动动画及网络/磁盘测速。"
+  ],
+  "assets": [
+    {
+      "type": "installer",
+      "name": "JiahaoToolbox_v4.4.0_Setup_x64.exe",
+      "url": "https://github.com/stone2013/JiahaoToolbox/releases/download/v4.4.0/JiahaoToolbox_v4.4.0_Setup_x64.exe",
+      "bytes": 4770799
+    },
+    {
+      "type": "portable",
+      "name": "JiahaoToolbox_v4.4.0_Portable.zip",
+      "url": "https://github.com/stone2013/JiahaoToolbox/releases/download/v4.4.0/JiahaoToolbox_v4.4.0_Portable.zip",
+      "bytes": 3621771
+    }
+  ]
+}

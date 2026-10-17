@@ -1,0 +1,46 @@
+{
+  "unit": {
+    "passed": 14,
+    "failed": 0
+  },
+  "browser": {
+    "startTime": "2026-10-17T10:08:53.902Z",
+    "duration": 24933.970999999998,
+    "expected": 21,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "tablet",
+      "width": 834,
+      "height": 1112
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 664,
+      "deviceScaleFactor": 3,
+      "touch": true,
+      "engine": "Chromium emulation, not real Safari",
+      "screenHeight": 844
+    }
+  ],
+  "staticAssetReferences": 30,
+  "pagesDeployed": false,
+  "desktopCoreModified": false,
+  "targetedAfterDiagnosticImageFix": {
+    "startTime": "2026-10-17T10:11:06.991Z",
+    "duration": 8184.865,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

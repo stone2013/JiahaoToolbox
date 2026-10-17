@@ -33,9 +33,9 @@ func LaunchClassicCMD(directory string, scan bool) error {
 	if strings.TrimSpace(directory) == "" {
 		return errors.New("缺少已选择的工作目录")
 	}
-	args := []string{"/D", "/T:0A"}
+	args := []string{"/D", "/T:0A", "/K", "title Jiahao Classic CMD"}
 	if scan {
-		args = append(args, "/K", "echo Jiahao Classic CMD - 扫描目录: %CD% & dir /s & echo. & echo 扫描结束；关闭窗口即可退出。")
+	args[3] += " & echo 扫描目录: %CD% & dir /s & echo. & echo 扫描结束；关闭窗口即可退出。"
 	}
 	root := os.Getenv("SystemRoot")
 	if root == "" {
